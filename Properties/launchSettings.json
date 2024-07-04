@@ -1,0 +1,10 @@
+{
+  "profiles": {
+    "kInvoice (Package)": {
+      "commandName": "MsixPackage"
+    },
+    "kInvoice (Unpackaged)": {
+      "commandName": "Project"
+    }
+  }
+}
