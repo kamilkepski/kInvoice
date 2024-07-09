@@ -17,9 +17,12 @@
     <Content Remove="Assets\BadgeLogo.scale-100.png" />
     <Content Remove="Assets\BadgeLogo.scale-200.png" />
     <Content Remove="Assets\BadgeLogo.scale-400.png" />
-    <Content Remove="Assets\kInvHighResolutionLogo.png" />
     <Content Remove="Assets\kInvHighResolutionLogoTransparent.png" />
     <Content Remove="Assets\kInvHighResolutionLogoWhiteTransparent.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Remove="Views\ClientPage.xaml" />
+    <None Remove="Views\RecipientPage.xaml" />
   </ItemGroup>
 
   <ItemGroup>
@@ -31,8 +34,8 @@
   </ItemGroup>
 
   <ItemGroup>
-    <PackageReference Include="Microsoft.Windows.SDK.BuildTools" Version="10.0.22621.756" />
-    <PackageReference Include="Microsoft.WindowsAppSDK" Version="1.5.240607001" />
+    <PackageReference Include="Microsoft.Windows.SDK.BuildTools" Version="10.0.26100.1" />
+    <PackageReference Include="Microsoft.WindowsAppSDK" Version="1.5.240627000" />
     <Manifest Include="$(ApplicationManifest)" />
   </ItemGroup>
 
@@ -45,15 +48,24 @@
     <ProjectCapability Include="Msix" />
   </ItemGroup>
   <ItemGroup>
-    <None Update="Assets\kInvHighResolutionLogo.png">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </None>
     <None Update="Assets\kInvHighResolutionLogoTransparent.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
     <None Update="Assets\kInvHighResolutionLogoWhiteTransparent.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
+    <Page Update="Views\RecipientPage.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Update="Views\ClientPage.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Update="Page\RecipientPage.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Update="Page\ClientPage.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
   </ItemGroup>
 
   <!--

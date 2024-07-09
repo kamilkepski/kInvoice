@@ -26,6 +26,18 @@
                     <SolidColorBrush
                         x:Key="TopNavigationViewItemForegroundSelectedPointerOver"
                         Color="#FF6CAB" />
+                    <SolidColorBrush
+                        x:Key="CheckBoxCheckBackgroundFillChecked"
+                        Color="#FF6CAB" />
+                    <SolidColorBrush
+                        x:Key="CheckBoxCheckBackgroundStrokeChecked"
+                        Color="#FF6CAB" />
+                    <SolidColorBrush
+                        x:Key="CheckBoxCheckBackgroundFillCheckedPointerOver"
+                        Color="#FF6CAB" />
+                    <SolidColorBrush
+                        x:Key="CheckBoxCheckBackgroundFillCheckedPressed"
+                        Color="#FF6CAB" />
                 </ResourceDictionary>
             </ResourceDictionary.MergedDictionaries>
             <!-- Other app resources here -->

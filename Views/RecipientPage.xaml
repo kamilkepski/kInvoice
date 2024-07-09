@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Page
+    x:Class="kInvoice.Views.RecipientPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:kInvoice.Views"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+
+    <StackPanel Spacing="20" Padding="20" Width="600" HorizontalAlignment="Left">
+        <CheckBox x:Name="EnableFieldsCheckBox" Content="Dodaj odbiorcę do faktury"/>
+        <TextBlock Text="Dane odbiorcy" Style="{StaticResource TitleTextBlockStyle}"/>
+        <AutoSuggestBox x:Name="NameTextBox" Header="Nazwa:" IsEnabled="False"/>
+        <TextBox x:Name="Name2TextBox" Header="Nazwa:" IsEnabled="False"/>
+        <TextBox x:Name="StreetTextBox" Header="Ulica:" IsEnabled="False"/>
+        <TextBox x:Name="ZipCodeCityTextBox" Header="Kod pocztowy i miejscowość:" IsEnabled="False"/>
+        <StackPanel Orientation="Horizontal" Spacing="10">
+            <Button x:Name="SaveRecipientInDatabaseButton" Content="Dodaj do listy odbiorców" Background="#755BB4" Foreground="#FFFFFF" FontWeight="Bold" IsEnabled="False"/>
+            <Button x:Name="ClearDataButton" Content="Wyczyść" Background="#FF6CAB" Foreground="#FFFFFF" FontWeight="Bold" IsEnabled="False"/>
+        </StackPanel>
+    </StackPanel>
+</Page>
