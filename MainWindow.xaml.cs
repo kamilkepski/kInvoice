@@ -26,6 +26,7 @@ namespace kInvoice
         public MainWindow()
         {
             this.InitializeComponent();
+            this.AppWindow.Title = "kInv - darmowy program do wystawiania faktur";
         }
     }
 }

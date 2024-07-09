@@ -8,7 +8,20 @@
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     mc:Ignorable="d">
 
-    <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" VerticalAlignment="Center">
-        <Button x:Name="myButton">kInvoice</Button>
-    </StackPanel>
+    <NavigationView x:Name="MainNavigationView" PaneDisplayMode="Top"
+                    SelectionFollowsFocus="Disabled" IsBackButtonVisible="Collapsed">
+        <NavigationView.PaneHeader>
+            <Image Source="/Assets/kInvHighResolutionLogoTransparent.png" Width="70" Height="20" Margin="10"></Image>
+        </NavigationView.PaneHeader>
+        <NavigationView.MenuItems>
+            <NavigationViewItem x:Name="ClientPage" Icon="Contact" Content="Dane nabywcy"/>
+            <NavigationViewItemSeparator/>
+            <NavigationViewItem x:Name="RecipientPage" Icon="Contact" Content="Dane odbiorcy"/>
+            <NavigationViewItemSeparator/>
+            <NavigationViewItem x:Name="InvoiceSettingsPage" Icon="Setting" Content="Informacje o fakturze"/>
+            <NavigationViewItem x:Name="ProductPage" Icon="Shop" Content="Produkty/Usługi"/>
+            <NavigationViewItem x:Name="SummaryPage" Icon="Preview" Content="Podsumowanie"/>
+        </NavigationView.MenuItems>
+        <Frame x:Name="ContentFrame" Background="{ThemeResource ApplicationPageBackgroundThemeBrush}"/>
+    </NavigationView>
 </Window>

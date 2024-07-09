@@ -17,6 +17,9 @@
     <Content Remove="Assets\BadgeLogo.scale-100.png" />
     <Content Remove="Assets\BadgeLogo.scale-200.png" />
     <Content Remove="Assets\BadgeLogo.scale-400.png" />
+    <Content Remove="Assets\kInvHighResolutionLogo.png" />
+    <Content Remove="Assets\kInvHighResolutionLogoTransparent.png" />
+    <Content Remove="Assets\kInvHighResolutionLogoWhiteTransparent.png" />
   </ItemGroup>
 
   <ItemGroup>
@@ -40,6 +43,17 @@
   -->
   <ItemGroup Condition="'$(DisableMsixProjectCapabilityAddedByProject)'!='true' and '$(EnableMsixTooling)'=='true'">
     <ProjectCapability Include="Msix" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Update="Assets\kInvHighResolutionLogo.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="Assets\kInvHighResolutionLogoTransparent.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="Assets\kInvHighResolutionLogoWhiteTransparent.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
   </ItemGroup>
 
   <!--

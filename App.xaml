@@ -3,12 +3,30 @@
     x:Class="kInvoice.App"
     xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-    xmlns:local="using:kInvoice">
+    xmlns:local="using:kInvoice"
+    RequestedTheme="Light">
     <Application.Resources>
         <ResourceDictionary>
             <ResourceDictionary.MergedDictionaries>
                 <XamlControlsResources xmlns="using:Microsoft.UI.Xaml.Controls" />
                 <!-- Other merged dictionaries here -->
+                <ResourceDictionary>
+                    <SolidColorBrush
+                        x:Key="TopNavigationViewItemForegroundSelected"
+                        Color="#FF6CAB" />
+                    <SolidColorBrush
+                        x:Key="TopNavigationViewItemForegroundPointerOver"
+                        Color="#755BB4" />
+                    <SolidColorBrush
+                        x:Key="NavigationViewItemForeground"
+                        Color="#755BB4" />
+                    <SolidColorBrush
+                        x:Key="NavigationViewSelectionIndicatorForeground"
+                        Color="#FF6CAB" />
+                    <SolidColorBrush
+                        x:Key="TopNavigationViewItemForegroundSelectedPointerOver"
+                        Color="#FF6CAB" />
+                </ResourceDictionary>
             </ResourceDictionary.MergedDictionaries>
             <!-- Other app resources here -->
         </ResourceDictionary>
