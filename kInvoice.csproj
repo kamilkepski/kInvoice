@@ -22,7 +22,10 @@
   </ItemGroup>
   <ItemGroup>
     <None Remove="Views\ClientPage.xaml" />
+    <None Remove="Views\InvoiceSettingsPage.xaml" />
+    <None Remove="Views\ProductPage.xaml" />
     <None Remove="Views\RecipientPage.xaml" />
+    <None Remove="Views\SummaryPage.xaml" />
   </ItemGroup>
 
   <ItemGroup>
@@ -54,6 +57,12 @@
     <None Update="Assets\kInvHighResolutionLogoWhiteTransparent.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
+    <Page Update="Views\SummaryPage.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Update="Views\ProductPage.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Update="Views\RecipientPage.xaml">
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -76,4 +85,10 @@
   <PropertyGroup Condition="'$(DisableHasPackageAndPublishMenuAddedByProject)'!='true' and '$(EnableMsixTooling)'=='true'">
     <HasPackageAndPublishMenu>true</HasPackageAndPublishMenu>
   </PropertyGroup>
+  <ItemGroup>
+    <CustomAdditionalCompileInputs Remove="Views\InvoiceSettingsPage.xaml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Remove="Views\InvoiceSettingsPage.xaml" />
+  </ItemGroup>
 </Project>

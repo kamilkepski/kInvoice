@@ -29,6 +29,15 @@ namespace kInvoice
                     case "RecipientPage":
                         ContentFrame.Navigate(typeof(Views.RecipientPage));
                         break;
+                    case "InvoiceSettingsPage":
+                        ContentFrame.Navigate(typeof(Views.InvoiceSettingsPage));
+                        break;
+                    case "ProductPage":
+                        ContentFrame.Navigate(typeof(Views.ProductPage));
+                        break;
+                    case "SummaryPage":
+                        ContentFrame.Navigate(typeof(Views.SummaryPage));
+                        break;
                 }
             }
         }

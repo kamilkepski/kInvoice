@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Page
+    x:Class="kInvoice.Views.ProductPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:kInvoice.Views"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+
+    <StackPanel Spacing="20" Padding="20" Width="600" HorizontalAlignment="Left">
+        <TextBlock Text="Dodawanie produktu/usługi" Style="{StaticResource TitleTextBlockStyle}"/>
+        <TextBox x:Name="ProductNameTextBox" Header="Nazwa produktu/usługi:" Text=""/>
+        <TextBox x:Name="MeasureUnitTextBox" Header="Jednostka miary:" Text="" />
+        <TextBox x:Name="AmountTextBox" Header="Ilość:" Text=""/>
+        <TextBox x:Name="PriceWithTaxTextBox" Header="Cena brutto:" />
+        <ComboBox x:Name="VatComboBox" Header="Stawka VAT w %" PlaceholderText="Wybierz stawkę VAT" SelectedIndex="2">
+            <x:String>0</x:String>
+            <x:String>5</x:String>
+            <x:String>8</x:String>
+            <x:String>23</x:String>
+        </ComboBox>
+        <Button Content="Dodaj" Background="#755BB4" Foreground="#FFFFFF" FontWeight="Bold"/>
+    </StackPanel>
+</Page>
